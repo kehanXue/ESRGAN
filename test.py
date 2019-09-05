@@ -36,4 +36,4 @@ for path in glob.glob(test_img_folder):
     output = np.transpose(output[[2, 1, 0], :, :], (1, 2, 0))
     output = (output * 255.0).round()
 #     cv2.imwrite('results/{:s}_esrgan.png'.format(base), output)
-    cv2.imwrite('/home/kehan/android-workspace/PictureMasterServer/apache-tomcat-9.0.24/webapps/PictureMasterServer_war/output_imgs/{:s}_esrgan.png'.format(base), output)
+    cv2.imwrite('/home/kehan/android-workspace/PictureMasterServer/apache-tomcat-9.0.24/webapps/PictureMasterServer_war/output_imgs/{:s}_esrgan.jpg'.format(base), output)
